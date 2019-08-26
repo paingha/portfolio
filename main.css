@@ -364,3 +364,6 @@ figure:after {
     left: 20px;
     cursor: pointer;
   }
+  .center-text{
+    text-align: center;
+  }
