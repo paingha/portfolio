@@ -1,3 +1,11 @@
+.list-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 65%;
+}
 figure {
 	position: absolute;
 	display: block;
