@@ -12,9 +12,14 @@
 	align-content: center;
 	align-items: center;
 	justify-content: center;
+	list-style: none;
 }
 .list-item{
 	margin-bottom: 0.8em;
+	font-size: 21px;
+}
+.list-item:hover{
+	text-decoration: underline;
 }
 figure {
 	position: absolute;
