@@ -1,10 +1,20 @@
 .list-wrapper{
+	margin-top: 1em;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+}
+.list-sub-wrapper{
 	width: 65%;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.list-item{
+	margin-bottom: 0.8em;
 }
 figure {
 	position: absolute;
