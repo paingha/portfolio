@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paingha Joe Alagoa | IS 3053 - Assignment 21</title>
+
+</head>
+<body>
+   <h3>College Expense Calculator </h3>
+   <form name="form1">
+       Housing: <input type="text" name="housing" size="10" value="" />
+       <p></p>
+       Tuition: <input type="text" name="tuition" size="10" value="" />
+       <p></p>
+       Books: <input type="text" name="books" size="10" value="" />
+       <p></p>
+       <hr />
+       Total: <input type="text" name="total" id="total" value="" />
+       <p></p>
+       <input type="button" value="Calculate Total" onClick="calculate()" />
+   </form>
+
+   <script language="javascript">
+       function calculate(){
+           var housing = parseFloat(document.form1.housing.value);
+           var tuition = parseFloat(document.form1.tuition.value);
+           var books = parseFloat(document.form1.books.value);
+           var result = housing + tuition + books;
+           document.form1.total.value = result;
+       }
+   </script>
+</body>
+</html>
