@@ -132,7 +132,7 @@ figure:after {
   }
   
   .clash-card__image--barbarian {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
+    /*background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");*/
   }
   .clash-card__image--barbarian img {
     width: 460px;
@@ -142,14 +142,19 @@ figure:after {
     left: -40px;
   }
   .clash-card__image--archer {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");
+    /*background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");*/
   }
   .clash-card__image--archer img {
-    width: 450px;
+    width: 200px;
     height: 260px;
     position: absolute;
-    top: -34px;
-    left: 0px;
+    top: -65px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 3.1em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   
   .clash-card__image--giant {
