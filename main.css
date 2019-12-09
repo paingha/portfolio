@@ -513,6 +513,14 @@ figure:after {
   border-top-right-radius: 29px;
   border-bottom-left-radius: 32px;
 }
+.portfolio-section-1-img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
 .portfolio-link{
   text-decoration: underline!important;
 }
