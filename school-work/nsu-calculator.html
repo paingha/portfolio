@@ -18,7 +18,23 @@
     <title>Paingha Joe Alagoa - IS 3053: Final NSU Calculator</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="../calc.css" rel="stylesheet">
-        
+    <script>
+        calculate =()=>{
+            const hours = parseInt(document.getElementById("hours").value);
+            const semester = document.getElementById("semester").value;
+            const campus = document.getElementById("campus").value;
+            let semesterValue;
+            let campusValue;
+            semester === "Spring" ? semesterValue = 2: semesterValue = 5;
+            campus === "Tahlequah" ? campusValue = 500: (campus === "Broken Arrow" ? campusValue = 400 : campusValue = 300);
+            let result = parseInt(hours * semesterValue * campusValue);
+            const resultEl = document.getElementById("resultEl");
+            if(!result){
+                result = "Error"
+            }
+            resultEl.innerText = result;
+        }
+    </script>
 </head>
 
 <body class="calc-main-body-wrapper">
@@ -32,11 +48,11 @@
                     <option value="Fall">Fall 2020</option>
                 </select>
                 <select class="calc-form-hours-select" name="campus" id="campus">
-                    <option value="Spring">Tahlequah</option>  
-                    <option value="Fall">Broken Arrow</option>
-                    <option value="Fall">Muskogee</option>
+                    <option value="Tahlequah">Tahlequah</option>  
+                    <option value="Broken Arrow">Broken Arrow</option>
+                    <option value="Muskogee">Muskogee</option>
                 </select>
-                <div class="calc-btn">
+                <div class="calc-btn" onClick="calculate();">
                     Calculate
                 </div>
             </div>
@@ -45,7 +61,7 @@
             <div class="calc-main-section-result">
                 <div class="result-main-wrapper">
                 <div class="result-amount-dollar">$</div>
-                <div class="result-amount-text">2,500</div>
+                <div id="resultEl" class="result-amount-text">2,500</div>
                 </div>
                 <div class="share-box">
                     <div class="share-box-wrapper">

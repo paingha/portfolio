@@ -32,7 +32,7 @@
 .calc-main-section-smaller{
     height: 100%;
     width: 30%;
-    background: url('https://offices.nsuok.edu/portals/60/images/ba/ba3-copy-5-Edit.jpg') no-repeat center;
+    background: url('https://offices.nsuok.edu/portals/60/images/ba/ba3-copy-5-Edit.jpg') no-repeat; 
     display: flex;
     flex-direction: column;
     justify-content: center;
